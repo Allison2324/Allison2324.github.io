@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Snail Surface</title>
+    <script src="./Utils/trackball-rotator.js"></script>
+    <script src="./Utils/m4.js"></script>
+    <script src="shader.gpu"></script>
+    <script src="main.js"></script>
+    <style>
+        body {
+            background-color: #212121;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        #draw {
+            display: block; /* To remove the scrollbars */
+            width: 100%;
+            height: 100%;
+        }
+        #block {
+            position: absolute;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 25px;
+            text-align: center;
+        }
+        #block button{
+            border: none;
+            background-color: aquamarine;
+            font-size: 15px;
+            padding: 5px 10px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body onload="init().then()">
+    <div id='block'>
+        <h1>Snail surface</h1>
+        <p>Rotate your phone to rotate 'Snail surface'</p>
+        <p style="color: white;">Liskovich Anton, TI-81</p>
+
+        <button onclick="showFrame()">Show wire-frame</button>
+    </div>
+
+
+    <div id="canvas-holder" style="width: 100vw; height: 100vh">
+        <canvas id="draw"></canvas>
+    </div>
+</body>
+</html>
