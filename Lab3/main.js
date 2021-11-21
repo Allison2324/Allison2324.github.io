@@ -101,9 +101,9 @@ function draw() {
     const texCoords = [];
     const indices = [];
 
-    const a = 0.25; //from book
-    const b = 0.25;
-    const c = 0.15;
+    const a = 0.20; //from book
+    const b = 0.20;
+    const c = 0.20;
     const N = 80;
 
     for (let i = 0; i <= N; i++) {
